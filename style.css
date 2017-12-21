@@ -1,0 +1,445 @@
+body{
+    display: flex;
+    padding:0px;
+    margin:0px; 
+   
+    background-image: url("images/pinkcover1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Cormorant Garamond', serif;
+    color:#3F3E41;
+}
+
+
+
+.ancor{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+#meny{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+
+    width:100%;
+    height:80px; 
+    font-size:18px;
+    background-color:rgb(255, 102, 102);
+      
+    position:fixed;
+    top:0px; 
+    z-index: 1;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+
+    width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+   
+
+}
+
+
+a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width:100%;
+    margin:auto;
+    padding:0px;
+}
+
+#headertext{
+    text-align: center;
+    width: 550px;
+    height: 400px;
+    margin-right: 100px;
+}
+
+#headerbild{
+    height: 520px;
+    width: 400px;
+
+    background-size: cover;
+    background-image: url("images/cvbild1.jpg");
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color:rgb(255, 102, 102);
+    box-shadow: 2px 1px 4px white;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.square, .square2{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #3F3E41;
+    /*background: linear-gradient(to top, #3F3E41,#3F3E41(209, 209, 209, 0.86), #3F3E41); /* Standard syntax */
+}
+
+/*      CV      */
+
+#cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+}
+
+
+.kompetens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height:340px;
+    width: 530px;
+    padding:20px 40px 20px 30px;
+
+    background-color: #3F3E41;   
+    color: #FFFFFF;
+
+}
+
+
+ul{
+    margin-top:-10px;
+    list-style: none;
+
+
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+.about{
+    width: 600px;
+    height: 379px;
+}
+
+.cvtexten{
+    padding:30px 40px 40px 20px;
+}
+
+.cvrubrik{
+    margin-top:40px;
+    text-align: center;
+}
+
+
+/*    Projekt     */
+
+
+#projekt{
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    margin-top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardrow{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    perspective: 700;
+}
+
+.cards{
+    text-align: center;
+    width: 300px;
+    height:210px;
+    margin:30px;
+   
+    transition: all 0.9s ease;
+    transform-style: preserve-3d;
+    position: relative;
+
+
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 300px;
+    height:210px;
+    backface-visibility: hidden;
+
+}
+
+.cards:hover{
+    transform: rotateY(180deg);
+
+}
+
+.mobilt{
+    display: none;
+}
+
+/*         framsidan cards            */
+
+.front{
+    width: 300px;
+    height:210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#front1{
+    background-image: url("images/storskogendump.PNG");
+}
+
+#front2{
+    background-image: url("images/vrinkdump.PNG");
+}
+
+#front3{
+    background-image: url("images/projectdump.PNG");
+ 
+}
+
+/*         baksidan cards           */
+.back{
+    background-color:#FFFFFF;
+    width: 300px;
+    height:210px;
+
+}
+
+.icons{
+    display: flex;
+    
+}
+.icon{
+    margin-left:20px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #3F3E41;
+    margin-top:0px;
+
+    display:flex;
+    justify-content: center;
+   
+}
+
+.fotdiv{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:rgb(255, 255, 255);
+}
+
+.fotline{
+    width: 100%;
+    height:20px;
+    background-color:rgba(255, 102, 102, 0.274); 
+
+}
+
+
+
+@media all and (max-width:1080px) {
+
+    .fotline{
+        margin-top: 350px;
+    }
+
+    .mobillink{
+        color:white;
+
+    }
+    .mobilt{
+        width: 300px;
+        height:55px;
+        background-color:rgb(255, 102, 102);
+        margin-top: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards:hover{
+        transform: none;
+    
+    }
+
+
+    #meny {
+        justify-content: space-around;
+    }
+
+    #headertext{
+        align-items: center;
+        margin: auto; 
+        margin-top: 20px;
+        height: 300px;
+        background: none;
+    } 
+    #headerbild{
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .square{
+        height:80px;
+        margin-top:350px;
+    }
+
+    .square2{
+        height:80px;
+    }
+
+
+   #cvblock1{
+       justify-content: space-around;
+   }
+
+#cv{
+       min-height:800px;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .cardrow{
+       flex-flow: row wrap;
+       margin-top: 280px;
+    
+   }
+
+   .footer{
+    
+    height: 200px;
+   }
+
+
+}
+
+
+@media all and (max-width: 600px) {
+
+    /*CARDS*/
+
+
+    .wrapper{
+        height: auto;
+    }
+    #meny {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        height:180px;
+    }
+
+    .square{
+        margin-top:550px;
+    }
+
+    .square2{
+        margin-top:0px;
+    }
+
+
+    #headertext{
+        height: 300px;
+        align-items: center;
+        padding-bottom:0px;
+        margin-top: 90px;
+    }
+
+    #headerbild{
+        height: 450px;
+        margin-top: 30px;
+        margin-bottom: 200px;
+
+    }
+
+    #linje{
+        margin:0px;
+    }
+
+    #cv{
+        min-height:1000px;
+        margin-top:0px; 
+    }
+
+    .kompentens{
+        flex:1 100%;
+        background-color: black;
+        width: 100%;
+    }
+
+    .about{
+        margin-top:-80px;
+    }
+
+   
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+   
+    }
+
+    .cardrow{
+        margin-top: 500px;
+       }
+
+    .fotline{
+        margin-top: 600px;
+    }
+
+
+    
+
+
+
+
+
+}

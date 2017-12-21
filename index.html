@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>Amanda Bengtsson</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1", shrink-to-fit="no">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <script src="https://use.fontawesome.com/6b6b3eeb71.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+                var menyHeight = $("#meny").outerHeight();
+
+                $(".ancor").click(function(e){
+                    var linkHref = $(this).attr("href");
+                  $("html, body").animate({
+                        scrollTop: $(linkHref).offset().top - menyHeight
+                    },600);
+
+                    e.preventDefault();
+
+                });
+
+            });
+   
+        
+        </script>
+    </head>
+
+    <body>
+            <div id="start"></div>
+            <div id="meny">
+                <a href="#start" class="ancor">Start</a>
+                <a href="#cv" class="ancor">CV</a>
+                <a href="#projekt" class="ancor">Projekt</a>
+                <a href="#kontakt" class="ancor">Kontakt</a>
+           </div>
+
+    <div id="wrapper">
+           <header>
+
+              <div id="headertext">
+                 <h1 style="margin-top:70px; font-size:50px;">
+                   AMANDA BENGTSSON</h1>
+                    <div id="linje" style="height:5px; width:70%; background-color:#3F3E41; margin-top:40px; margin:auto;"></div>
+                    <h2 style="margin-top:40px;">Webbutvecklare</h2>
+                    <button style="margin-top:20px;">Kontakta mig</button>
+               </div>
+
+
+               <div id="headerbild">
+               </div>
+
+           </header>
+
+
+           <div class="square">
+           </div>
+
+
+           <!--    CV     -->
+           
+        <div id="cv" class="blocks">
+
+                <div class="kompetens">
+                    <h3 style="font-size:30px;">Kompetenser</h3>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Front End</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> HTML 5</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> CSS 3</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> JavaScript</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Jquery</li>
+                        </ul>
+                </div>
+
+                <div class="about">
+                    <h3 class="cvrubrik">Amanda Bengtsson</h3>
+                    <p class="cvtexten">Jag är en nytänkande och kreativ student som studerar webbutveckling inom E-handel. Jag drivs av att få utvecklas och jag är ständigt på jakt efter nya kunskaper. Som person har jag lätt för att samarbeta med andra och tycker om att arbeta i team men jag kan samtidigt ta ansvar och arbeta självständigt. 
+                        
+                        <br><br>Jag pluggar på medieinstitutet och utbildningen är sammanlagt 2 år med två praktikperioder. Tekniskt och praktiskt sätt har jag hittills fått mig goda kunskaper i html och CSS och även grundläggande i JavaScript samt jQuery. Under vårterminen kommer jag att läsa databasteknik och utveckling mot e-handelsplattformar.
+                        </p>
+                </div>
+
+            </div>
+
+            <div class="square2">
+            </div>
+
+         
+            <!--    PROJEKT    -->
+
+           <div id="projekt" class="blocks">
+
+            <div class="cardrow">
+
+                <div class="cards">
+                    <div class="front" id="front1">   
+                            <div class="mobilt"><a href="#" class="mobillink">Storskogen</a></div> 
+                    </div>
+
+                    <div class="back" id="back1">
+                        <h1>Storskogen</h1>
+                        <p>Ett litet projekt som gick ut på mobilanpassa</p>
+                        <a href="#"><button class="links">Gå till hemsida</button></a>
+                    </div> 
+
+                </div>
+
+
+                <div class="cards">
+                    <div class="front" id="front2">
+                            
+                            <div class="mobilt"><a href="#" class="mobillink">VR-INK</a></div>
+                    </div>
+
+                    <div class="back" id="back2">
+                        <h1>Vrink</h1>
+                        <p>En information och bookningssida för företaget VR-ink</p>
+                        <a href="#"><button class="links">Gå till hemsida</button></a>
+                    </div> 
+                </div>
+
+                <div class="cards">
+                    <div class="front" id="front3">
+                            <div class="mobilt"><a href="#" class="mobillink">Homedecor</a></div>
+                    </div>
+
+                    <div class="back" id="back3">
+                        <h1>Homedecor-presentation</h1>
+                        <p>En presentationsida för ett större projekt</p>
+                        <a href="#"><button class="links">Gå till hemsida</button></a>
+                    </div> 
+
+                </div>
+
+            </div>
+
+            </div>
+
+        <!--   FOTEN   -->
+
+        <div id="kontakt"></div>
+        <div class="fotline"></div>
+           <div class="footer">
+               
+               <div class="fotdiv">
+               <p style="font-size:17px;">Amanda Bengtsson <br>
+                  bengtsson.amanda95@gmail.com<br>
+                  0707435214</p>
+
+                  <div class="icons">
+
+                  <div class="icon"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
+                  <div class="icon"><i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+           </div>
+        </div>
+           </div>
+
+                
+      </div>
+    </body>
+</html>
