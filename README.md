@@ -1,5 +1,5 @@
 # portfolio
-amandabengtsson.wieg17.se/portfolio
+http://amandabengtsson.wieg17.se/portfolio
 
 Målet med mitt CV/portfolio var att hålla det stilrent men samtidigt lekfullt.
 
